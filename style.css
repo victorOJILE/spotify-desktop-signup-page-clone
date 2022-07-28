@@ -1,0 +1,406 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(35, 27, 63, 0.925);
+    font-family: 'Roboto' , sans-serif;
+    position: relative;
+}
+a {
+    text-decoration: none;
+    color: initial;
+}
+button {
+    border: none;
+    background-color: inherit;
+    outline: none;
+}
+ul, li {
+    margin: 0;
+}
+li {
+    list-style-type: none;
+}
+.hellip {
+    width: 6rem;
+    margin-left: 1rem;
+    position: relative;
+}
+.hellip button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+    margin: 1rem 0.2rem;
+    font-weight: 600;
+}
+.hellip-wrapper {
+    background-color: rgb(32, 32, 32);
+    padding: 4px 0;
+    border: 1px solid rgb(56, 56, 56);
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+.first-div {
+    position: relative;
+}
+.first-div li {
+    background-color: inherit;
+}
+.hellip svg {
+    width: 0;
+    height: 0;
+}
+.first-div:hover, .first-div:focus, .hellip-child-dropdown li:hover {
+    background-color: rgb(51, 51, 51);
+}
+.first-div div:first-child, .first-div li {
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    color: rgb(224, 224, 224);
+    padding: 6px 10px;
+    display: inline-block;
+    width: 100%;
+}
+.hellip-child-dropdown {
+    display: none;
+    text-align: center;
+    border: 1px solid rgb(56, 56, 56);
+    color: rgb(224, 224, 224);
+    background-color: rgb(30, 30, 30);
+    padding: 4px 0px;
+    position: absolute;
+    top: -4px;
+    left: 100%;
+}
+.first-div:hover .hellip-child-dropdown {
+    display: inline-block;
+}
+.hellip-child-dropdown li {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 25px;
+}
+.hellip-child-dropdown li span:first-child {
+    width: 50%;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.hellip-child-dropdown li span {
+    display: block;
+}
+.hellip-child-dropdown li span:last-child {
+    color: rgb(168, 168, 168);
+}
+.last-li {
+    width: 15rem;
+}
+.hr1 {
+    border: 1px none grey;
+    border-top: solid;
+}
+.show {
+    display: block;
+}
+.show-inline {
+    display: inline-block;
+}
+
+
+
+.wrapper1 {
+    height: 18rem;
+    top: 50vh;
+    margin-top: -25vh;
+}
+.first-btn {
+    margin: 1.5rem 0;
+    color: white; 
+    background-color: rgb(56, 177, 82);
+}
+.wrapper2 {
+    background-color: rgb(14, 14, 14);
+    width: 100%;
+    max-width: 31rem;
+    min-width: 250px;
+    border-radius: 3px;
+    padding-bottom: 2rem;
+    position: absolute;
+    left: 50%;
+    margin-left: -15.5rem;
+    transition: 800ms;
+}
+.hide {
+    opacity: 0;
+    visibility: hidden;
+}
+.show-wrapper2 {
+    opacity: 1;
+    transform: scale(1);
+    visibility: visible;
+}
+.center{
+    margin: 0 auto;
+    width: 68%;
+}
+.logo2 {
+    width: 38%;
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.logo {
+    width: 30%;
+    margin-top: 2rem;
+    margin-bottom: 0.5rem;
+}
+.header {
+    font-size: 14px;
+    color: white;
+    font-weight: 700;
+    margin: 7px 0;
+    text-align: center;
+    padding: 5px;
+}
+.disappear1 {
+    transform: translate(-100%);
+    opacity: 0;
+    visibility: hidden;
+}
+.disappear2 {
+    transform: scale(0.5);
+    opacity: 0.5;
+    visibility: hidden;
+}
+.error-msg {
+    background-color: rgb(233, 51, 51);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    display: none;
+    padding: 8px;
+    border: none;
+    line-height: 20px;
+    border-radius: 3px;
+    width: 68%;
+    margin: 0 auto;
+}
+.error-msg div {
+    display: inline-block;
+}
+.error-msg svg {
+    width: 0;
+}
+.input-class {
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    justify-content: space-between;
+    margin: 0.7rem auto;
+}
+.input-class div {
+    display: inline-block;
+}
+input {
+    padding: 0.8rem 0 0.8rem 0.6rem;
+    max-height: 100%;
+    font-weight: 600;
+    display: block;
+    width: 100%;
+    background-color: inherit;
+    color: whitesmoke;
+    border: none;
+    outline: none;
+}
+.svg-div {
+    text-align: center;
+}
+.fa-eye, .fa-eye-slash, .fa-envelope-o {
+    margin: 25% 10px;
+    font-size: 22px !important;
+    color: rgb(124, 124, 124);
+}
+.input-class svg {
+    height: 0px;
+}
+.reset-psw a, .remember-div {
+    color: rgb(167, 167, 167);
+    font-size: small;
+    text-decoration: underline;
+    font-weight: 500;
+}
+.reset-psw a:hover, .reset-psw a:focus {
+    color: white;
+}
+.remember-div {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.3rem 0;
+}
+.on-select {
+    width: 2.5rem;
+    height: 1.4rem;
+    background-color: black;
+    border: 2px solid rgb(40, 65, 65);
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    transition: 500ms;
+}
+.trigger {
+    height: 1.4rem;
+    width: 1.4rem;
+    border-radius: 50%;
+    transform: scale(1.06);
+    background-color: grey;
+    transition: 1s;
+}
+.trigger:active {
+    width: 1.5rem;
+}
+.trigger-click {
+    background-color: white;
+    position: absolute;
+    right: 0px;
+}
+.on-select-click {
+    border: none;
+    background-color: rgb(0, 158, 71);
+}
+.submit-button {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    font-size: 85%;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.95rem;
+    border-radius: 40px 40px;
+}
+.submit-button:hover, .submit-button:focus {
+    transform: scale(1.05);
+    font-size: 90%;
+}
+.wrapper2 .submit-button:active {
+    background-color: rgb(167, 167, 167);
+}
+.hr {
+    margin: 1.5rem 0rem;
+    border: 2px none rgb(117, 117, 117);
+    border-top-style: inset;
+    text-align: center;
+    position: relative;
+}
+.hr span {
+    position: absolute;
+    top: -14px;
+    left: 42%;
+    background-color: rgb(14, 14, 14);
+    width: 3rem;
+    font-size: 14px;
+    padding: 4px;
+    color: rgb(167, 167, 167);
+}
+.continue-with > div {
+    padding: 0.55rem;
+    margin: 0.6rem 0;
+    border: 1px solid rgb(199, 199, 199);
+    border-radius: 45px 45px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: default;
+}
+.continue-with > div:hover, .continue-with > div:focus {
+    transform: scale(1.02);
+}
+.continue-with > div img {
+    margin-left: 2%;
+}
+.continue-with-name {
+    display: flex;
+    align-items: center;
+}
+.continue-with-name div:last-child {
+    width: 85%;
+    text-align: center;
+}
+.continue-with-name img {
+    width: 1.5rem;
+    border-radius: 50%;
+}
+.signup-text a {
+    letter-spacing: 2px;
+    color: rgb(187, 187, 187);
+    margin: 1rem auto;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    font-size: 13px;
+}
+.signup-text a span {
+    color: white;
+    text-decoration: underline;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+.settings {
+    letter-spacing: 2px;
+}
+.settings:hover, .settings:focus {
+    text-decoration: underline;
+}
+@media screen and (max-width: 410px) {
+    .header {
+        font-size: 12px;
+    }
+    .signup-text a {
+        font-size: 10px;
+    }
+    .signup-text a span {
+        font-size: 0.6rem;
+    }
+}
+@media screen and (max-width: 350px) {
+    input {
+        font-size: 12px;
+    }
+    .input-class {
+        height: 2rem;
+    }
+    .submit-button {
+        padding: 0.6rem;
+        }
+    .continue-with > div {
+        padding: 0.3rem;
+        font-size: 11px;
+    }
+    .wrapper1 h1{
+        font-size: large;
+    }
+    .wrapper1 .signup-text {
+        margin-top: -1.5rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .wrapper2 {  
+        margin-left: -50%;
+    }
+    .wrapper1 {
+        margin-top: -50%;
+    }
+}
+@media screen and (min-width: 350px) {
+    .wrapper1 {
+        height: 22rem;
+    }
+}

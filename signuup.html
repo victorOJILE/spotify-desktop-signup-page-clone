@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign up - Spotify</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <div class="top-img-div"><img src="spotify black.png" alt="Spotify logo.png"></div>
+            <div class="h1-div">
+                <h1>Sign up for free to start listening.</h1>
+            </div>
+            <div class="others-signup">
+                <div class="others-signup-div others-signup1-div"><img src="facebook.png">Sign up with Facebook</div>
+                <div class="others-signup-div others-signup2-div"><img src="facebook.gif">Sign up with Google</div>
+            </div>
+            <div class="or-div"><span>or</span></div>
+        </div>
+        <div class="form-div">
+            <form action="" autocomplete="on" method="post" name="signup-form" target="_blank">
+                <div class="inp-divs">
+                    <label>
+                        <p id="email-quest">What's your email?</p>
+                        <input type="email" name="email" placeholder="Enter your email." maxlength="25" id="email" required>
+                        <input type="number" name="phone-number" id="phone-no" placeholder="Enter your phone number." class="hidden">
+                    </label>
+                    <small class="link-style" id="use-number" onclick="showPhone()">Use phone number instead.</small>
+                    <small class="link-style" id="use-email" onclick="showNumber()">Use email instead.</small>
+                </div>
+                <div class="inp-divs" id="confirm-em">
+                    <label>
+                        <p>Confirm your email</p>
+                        <input type="email" placeholder="Enter your email again." maxlength="25" id="re-enter-email">
+                    </label>
+                    <br />
+                    <small style="color: crimson; display: none;" id="wrong-email">Email does not match</small>
+                </div>
+                <div class="inp-divs">
+                    <label>
+                        <p>Create a password</p>
+                        <input type="password" id="password" placeholder="Create a password" required>
+                    </label>
+                </div>
+                <div class="inp-divs">
+                    <label>
+                        <p>What should we call you?</p>
+                        <input type="text" id="profileName" placeholder="Enter a profile name." required>
+                    </label>
+                    <br />
+                    <small>This appears on your profile.</small>
+                </div>
+
+                <label>
+                    <p>What's your date of birth?</p>
+                </label>
+                <div class="date-div">
+                    <div>
+                        <div>Day</div>
+                        <div class="normDiv">
+                            <input type="number" min="1" max="31" maxlength="2" id="day" placeholder="DD" id="date-day">
+                        </div>  
+                    </div>  
+                    <div>
+                        <div>Month</div>
+                        <div class="month normDiv">
+                            <select name="" id="month" style="width: 100%; padding: 11.5px; margin-right: 10px; border: none;">
+                                <option value="" selected disabled>Month</option>
+                                <option value="0">January</option>
+                                <option value="1">February</option>
+                                <option value="2">March</option>
+                                <option value="3">April</option>
+                                <option value="4">May</option>
+                                <option value="5">June</option>
+                                <option value="6">July</option>
+                                <option value="7">August</option>
+                                <option value="8">September</option>
+                                <option value="9">October</option>
+                                <option value="10">November</option>
+                                <option value="11">December</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <div>Year</div>
+                        <div class="normDiv">
+                            <input type="number" id="year" min="1940" max="2022" maxlength="4" placeholder="YYYY">
+                        </div>
+                    </div>
+                </div>
+                <div class="gender-div">
+                    <label>
+                        <p>What's your gender?</p>
+                    </label>
+                    <div  class="flex">
+                        <div class="flex" style="align-items: center;">
+                            <input type="radio" name="gender-male">
+                            <p>Male</p>
+                        </div>
+                        <div class="flex" style="align-items: center;">
+                            <input type="radio" name="gender-female">
+                            <p>Female</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="gender-div flex">
+                        <input type="checkbox" name="recieve-marketing-msg">
+                        <p>I would prefer not to recieve marketing messages from Spotify.</p>
+                    </div>
+                    <div class="flex gender-div">
+                        <input type="checkbox" name="share-reg-data">
+                        <p>Share my registration data with Spotify's content providers for marketing purposes.</p>
+                    </div>
+                </div>
+                <div class="grid reCAPTCHA">
+                    <div>
+                        <div style="display: flex; align-items: center; padding-left: 10px;">
+                            <div style="display: inline-block; width: 2rem; height: 2rem; background-color: white;
+                                        border: 2px solid rgba(163, 183, 199, 0.842); border-radius: 3px;"></div><div style="color: rgb(97, 97, 97); font-size: 15px; font-weight: 600; padding-left: 5px;"> I'm not a robot</div>
+                        </div>
+                    </div>
+                    <div style="font-size: 10px;">
+                        <img src="recaptcha.png" style="width: 2rem;" alt="">
+                        <div>reCAPTCHA</div>
+                        <div><a href>Privacy</a> . <a href="">Terms</a></div>
+                    </div>
+                </div>
+                <div class="centralize">
+                    <p>By clicking on sign-up, you agree to the <a href="">Spotify Terms and Conditions</a> and <a
+                        href="">Privacy Policy</a>.</p>
+                    <button class="signup-btn" type="submit" id="submit">Sign up</button>
+                    <h5>Have an account? <a href="">Log in</a>.</h5>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="signup.js"></script>
+</html>

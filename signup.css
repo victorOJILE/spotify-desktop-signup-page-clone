@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+.wrapper {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 28rem;
+    padding-bottom: 5rem;
+}
+.top-img-div, .h1-div, .or-div {
+    text-align: center;
+}
+.top-img-div {
+    margin: 2rem 0;
+}
+.head img {
+    width: 25%;
+}
+.h1-div {
+    font-size: 13px;
+    margin: 1.8rem 0;
+}
+.others-signup-div {
+    width: 85%;
+    margin: 1.2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: 600;
+}
+.others-signup1-div {
+    border: 2px solid rgba(84, 83, 155, 0.918);
+;
+    color: white;
+    background-color: rgba(84, 83, 155, 0.918);
+}
+.others-signup2-div {
+    border: 2px solid rgba(170, 170, 170, 0.925);
+    background-color: inherit;
+    color: grey;
+}
+.others-signup img {
+    width: 2.2rem;
+    padding-right: 15px;
+}
+.or-div {
+    margin: 1.8rem auto;
+    border: 1px none lightgrey;
+    border-top-style: solid;
+    width: 70%;
+    position: relative;
+}
+.or-div span {
+    position: absolute;
+    left: 50%;
+    margin-left: -1.5rem;
+    top: -9px;
+    color: rgb(168, 168, 168);
+    font-size: 14px;
+    background-color: white;
+    width: 3rem;
+}
+.form-div {
+    padding: 0 20px;
+}
+.inp-divs {
+    margin: 1.2rem 0;
+}
+label p {
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+    margin: 0.4rem 0;
+}
+input[type="text"], input[type="email"], .normDiv, input[type="password"], input[type="number"] {
+    padding: 13px;
+    width: 100%;
+    border: 2px solid lightgrey;
+    border-radius: 4px;
+}
+small, .date-div {
+    font-weight: 500;
+    font-size: 12px;
+}
+.link-style, .centralize a {
+    color: rgb(48, 148, 48);
+    text-decoration: underline;
+}
+.link-style {
+    cursor: pointer;
+}
+.date-div {
+    margin-top: 12px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 22% auto 30%;
+    gap: 10px;
+}
+.month {
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+.month select {
+    outline: none;
+    font-size: 15px;
+    color: grey;
+}
+.month option {
+    font-size: 13px;
+    color: rgb(0, 0, 0);
+}
+.normDiv {
+    padding: 0;
+    margin-top: 6px;
+}
+.normDiv input {
+    width: 100%;
+    border: none;
+    font-size: 14px;
+}
+.gender-div {
+    margin: 2rem 0;
+}
+.flex {
+    display: flex;
+}
+.grid {
+    height: 5rem;
+    width: 15rem;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 70% 30%;
+}
+.grid div:last-child {
+    text-align: center;
+}
+.reCAPTCHA {
+    border: 2px solid rgb(206, 216, 223);
+    border-radius: 4px;
+    padding: 2px;
+    background-color: rgb(241, 241, 241);
+}
+.reCAPTCHA p {
+    display: inline-block;
+}
+.reCAPTCHA a:hover, .reCAPTCHA a:focus {
+    text-decoration: underline;
+}
+.flex p {
+    display: inline-block;
+    margin-left: 4px;
+    font-size: 13px;
+}
+.flex div {
+    margin-right: 20px;
+}
+.centralize {
+    text-align: center;
+}
+.centralize p {
+    font-size: 11px;
+    padding: 10px;
+    margin-top: 1rem;
+    line-height: 16px;
+    font-weight: 600;
+}
+.signup-btn {
+    width: 8rem;
+    border: none;
+    margin: 0.8rem 0;
+    padding: 17px;
+    background-color: rgb(50, 212, 91);
+    font-size: 15px;
+    font-weight: 600;
+    opacity: 0.9;
+    border-radius: 50px;
+}
+.signup-btn:hover, .signup-btn:focus {
+    background-color: rgb(14, 151, 49);
+}
+.password-require {
+    margin-top: 2px;
+    border: 1px solid rgb(211, 211, 211);
+    padding: 3px;
+}
+#less, #contain-capital, #contain-number {
+    display: block;
+    font-size: 11px;
+    font-weight: 600;
+    color: red;
+    padding: 3px 0;
+}
+
+
+
+
+
+
+
+

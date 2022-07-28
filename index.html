@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Spotify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div style="position: absolute; z-index: 10">
+        <div class="hellip">
+            <button id="hellip">&hellip;</button>
+            <div id="hellip-wrapper" class="hellip-wrapper">
+                <div class="first-div" id="file">
+                    <div>File<svg></svg></div>
+                    <div class="hellip-child-dropdown">
+                        <ul>
+                            <li><span>Exit</span><span>Ctrl+Shift+Q</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="first-div" id="edit">
+                    <div>Edit <svg></svg></div>
+                    <div class="hellip-child-dropdown">
+                        <ul>
+                            <li><span>Undo</span><span>Ctrl+Z</span></li>
+                            <li><span>Redo</span><span>Ctrl+Y</span></li>
+                            <hr>
+                            <li><span>Cut</span><span>Ctrl+X</span></li>
+                            <li><span>Copy</span><span>Ctrl+C</span></li>
+                            <li><span>paste</span><span>Ctrl+V</span></li>
+                            <li><span>Delete</span><span>Del</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="first-div" id="view">
+                    <div>View<svg></svg></div>
+                    <div class="hellip-child-dropdown">
+                        <ul class="last-li">
+                            <li><span>Zoom&nbsp;In</span><span>Ctrl+=</span></li>
+                            <li><span>Zoom&nbsp;Out</span><span>Ctrl+-</span></li>
+                            <li><span>Reset&nbsp;Zoom</span><span>Ctrl+0</span></li>
+                            <hr>
+                            <li><span style="color: rgb(224, 224, 224)">Hardware&nbsp;Acceleration</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" wrapper2 wrapper1" id="wrapper1" style="border-radius: 7px">
+        <div class="center">
+            <div style="text-align: center"><img src="spotify.png" class="logo2" alt="Spotify Logo"></div>
+            <div class="header">
+                <h1>Millions of songs.<br />Free on Spotify.</h1>
+            </div>
+            <button type="button" id="login-button" class="submit-button" onclick="document.getElementById('wrapper2').style.display = 'block';"
+                style="margin: 1.5rem 0; color: white; background-color: rgb(56, 177, 82);">LOG IN</button>
+            <p class="signup-text"><a href=""  onclick="document.getElementById('wrapper2').style.display = 'block';">Don't have an account? <span id="sign-up">SIGN&nbsp;UP</span></a></p>
+        </div>
+    </div>
+    <div class="hide wrapper2" id="wrapper2" style="display: none;">
+        <div style="text-align: center"><img src="spotify.png" class="logo" alt="Spotify Logo"></div>
+        <div class="header">
+            <h1>Log in to continue.</h1>
+        </div>
+        <div id="error-msg" class="error-msg">
+            <div><svg style="width: 0px; height: 0px;"></svg></div>
+            <div>Your session has expired, please try again.<br>
+                (Error code: desktop_login_accounts:4)</div>
+        </div>
+        <section>
+            <div class="center">
+                <form action="#">
+                    <div class="input-class">
+                        <input type="email" name="email" placeholder="Email or username" autofocus required>
+                        <div class="svg-div">
+                            <i class="fa fa-envelope-o"></i>
+                            <!-- <svg id="svg-div" style="width:35; height: 30" viewbox="3 -4 35 35">
+                                <g fill="none" stroke="rgb(250, 250, 250)">
+                                    <path stroke-width="1" d="M5 12, L30 12, L30 29, L5 29 Z" />
+                                    <path stroke-width="1" d="M5 17, L17.5 21, L30 17" />
+                                </g>
+                            </svg> -->
+                        </div>
+                    </div>
+                    <div class="input-class">
+                        <input id="password" type="password" name="password" placeholder="Password" required>
+                        <div class="svg-div">
+                            <i id="eye" class="fa fa-eye" style="display: none;"></i>
+                            <i id="eye-slash" class="fa fa-eye-slash"></i>
+                        </div>
+                    </div>
+                    <p class="reset-psw"><a href="#">Reset Password</a></p>
+                    <div class="remember-div">
+                        <div>Remember me</div>
+                        <div class="on-select" role="checkbox" aria-checked="false">
+                            <div class="trigger" id="trigger"></div>
+                        </div>
+                    </div>
+                    <button type="button" class="submit-button">LOG IN</button>
+                    <div class="hr"><span>OR</span></div>
+                    <div class="continue-with">
+                        <div class="continue-with-name">
+                            <div style="margin-left: 5px"><img src="facebook.png"></div>
+                            <div>Continue with Facebook</div>
+                        </div>
+                        <div class="continue-with-name">
+                            <div style="margin-left: 5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" xmlns:xlink="http://www.w3.org/1999/xlink" style="enable-background:new 0 0 150 150;" version="1.1" viewBox="20 20 100 100" xml:space="preserve">
+                                    <style type="text/css">
+                                    .st0{fill:#1A73E8;}
+                                    .st1{fill:#EA4335;}
+                                    .st2{fill:#4285F4;}
+                                    .st3{fill:#FBBC04;}
+                                    .st4{fill:#34A853;}
+                                    .st5{fill:#4CAF50;}
+                                    .st6{fill:#1E88E5;}
+                                    .st7{fill:#E53935;}
+                                    .st8{fill:#C62828;}
+                                    .st9{fill:#FBC02D;}
+                                    .st10{fill:#1565C0;}
+                                    .st11{fill:#2E7D32;}
+                                    .st12{fill:#F6B704;}
+                                    .st13{fill:#E54335;}
+                                    .st14{fill:#4280EF;}
+                                    .st15{fill:#34A353;}
+                                    .st16{clip-path:url(#SVGID_2_);}
+                                    .st17{fill:#188038;}
+                                    .st18{opacity:0.2;fill:#FFFFFF;enable-background:new    ;}
+                                    .st19{opacity:0.3;fill:#0D652D;enable-background:new    ;}
+                                    .st20{clip-path:url(#SVGID_4_);}
+                                    .st21{opacity:0.3;fill:url(#_45_shadow_1_);enable-background:new    ;}
+                                    .st22{clip-path:url(#SVGID_6_);}
+                                    .st23{fill:#FA7B17;}
+                                    .st24{opacity:0.3;fill:#174EA6;enable-background:new    ;}
+                                    .st25{opacity:0.3;fill:#A50E0E;enable-background:new    ;}
+                                    .st26{opacity:0.3;fill:#E37400;enable-background:new    ;}
+                                    .st27{fill:url(#Finish_mask_1_);}
+                                    .st28{fill:#FFFFFF;}
+                                    .st29{fill:#0C9D58;}
+                                    .st30{opacity:0.2;fill:#004D40;enable-background:new    ;}
+                                    .st31{opacity:0.2;fill:#3E2723;enable-background:new    ;}
+                                    .st32{fill:#FFC107;}
+                                    .st33{opacity:0.2;fill:#1A237E;enable-background:new    ;}
+                                    .st34{opacity:0.2;}
+                                    .st35{fill:#1A237E;}
+                                    .st36{fill:url(#SVGID_7_);}
+                                    .st37{fill:#FBBC05;}
+                                    .st38{clip-path:url(#SVGID_9_);fill:#E53935;}
+                                    .st39{clip-path:url(#SVGID_11_);fill:#FBC02D;}
+                                    .st40{clip-path:url(#SVGID_13_);fill:#E53935;}
+                                    .st41{clip-path:url(#SVGID_15_);fill:#FBC02D;}
+                                    </style>
+                                    <g>
+                                        <path class="st14" d="M120,76.1c0-3.1-0.3-6.3-0.8-9.3H75.9v17.7h24.8c-1,5.7-4.3,10.7-9.2,13.9l14.8,11.5   C115,101.8,120,90,120,76.1L120,76.1z"/>
+                                        <path class="st15" d="M75.9,120.9c12.4,0,22.8-4.1,30.4-11.1L91.5,98.4c-4.1,2.8-9.4,4.4-15.6,4.4c-12,0-22.1-8.1-25.8-18.9   L34.9,95.6C42.7,111.1,58.5,120.9,75.9,120.9z"/>
+                                        <path class="st12" d="M50.1,83.8c-1.9-5.7-1.9-11.9,0-17.6L34.9,54.4c-6.5,13-6.5,28.3,0,41.2L50.1,83.8z"/>
+                                        <path class="st13" d="M75.9,47.3c6.5-0.1,12.9,2.4,17.6,6.9L106.6,41C98.3,33.2,87.3,29,75.9,29.1c-17.4,0-33.2,9.8-41,25.3   l15.2,11.8C53.8,55.3,63.9,47.3,75.9,47.3z"/>
+                                    </g>
+                                </svg>
+                            </div>
+                            <div>Continue with Google</div>
+                        </div>
+                        <div class="continue-with-name">
+                            <div style="margin-left: 5px;">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" width="25px" height="25px" viewBox="0 0 22.773 22.773" style="enable-background:new 0 0 22.773 22.773;" xml:space="preserve">
+                                    <g fill="white">
+                                        <path d="M15.769,0c0.053,0,0.106,0,0.162,0c0.13,1.606-0.483,2.806-1.228,3.675c-0.731,0.863-1.732,1.7-3.351,1.573    c-0.108-1.583,0.506-2.694,1.25-3.561C13.292,0.879,14.557,0.16,15.769,0z"/>
+                                        <path d="M20.67,16.716c0,0.016,0,0.03,0,0.045c-0.455,1.378-1.104,2.559-1.896,3.655c-0.723,0.995-1.609,2.334-3.191,2.334    c-1.367,0-2.275-0.879-3.676-0.903c-1.482-0.024-2.297,0.735-3.652,0.926c-0.155,0-0.31,0-0.462,0    c-0.995-0.144-1.798-0.932-2.383-1.642c-1.725-2.098-3.058-4.808-3.306-8.276c0-0.34,0-0.679,0-1.019    c0.105-2.482,1.311-4.5,2.914-5.478c0.846-0.52,2.009-0.963,3.304-0.765c0.555,0.086,1.122,0.276,1.619,0.464    c0.471,0.181,1.06,0.502,1.618,0.485c0.378-0.011,0.754-0.208,1.135-0.347c1.116-0.403,2.21-0.865,3.652-0.648    c1.733,0.262,2.963,1.032,3.723,2.22c-1.466,0.933-2.625,2.339-2.427,4.74C17.818,14.688,19.086,15.964,20.67,16.716z"/>
+                                    </g>
+                                    </svg>
+                            </div>
+                            <div>Continue with Apple</div>
+                        </div>
+                        <p class="signup-text"><a href="">Don't have an account? <span
+                                    id="signup-2">SIGN&nbsp;UP</span></a></p>
+                        <div class="settings"
+                            style="border: none; padding: 0; text-align: center; color: rgb(187, 187, 187); font-size: 11px; margin: 2.5rem 0;">
+                            SETTINGS</div>
+                    </div>
+
+                </form>
+            </div>
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
